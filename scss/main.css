@@ -522,30 +522,6 @@ main .main-wrap01 .link-card .link-card-wrap .link-card02 li p span {
   line-height: 34px;
 }
 
-main .main-wrap02 .line01::after {
-  content: "";
-  width: 100%;
-  height: 6px;
-  background-color: #00b2ff;
-  position: absolute;
-  z-index: 5;
-  left: 0%;
-  bottom: 0%;
-  -webkit-animation-name: progress;
-          animation-name: progress;
-  -webkit-animation-duration: 15000ms;
-          animation-duration: 15000ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@keyframes progress {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
 main .main-wrap02 .line01 {
   margin-bottom: 50px;
   width: 100%;
@@ -556,7 +532,27 @@ main .main-wrap02 .line01 .main-banner-screen {
   width: 1300px;
   margin: 0 auto;
 }
-main .main-wrap02 .line01 .main-banner-screen .screen01 .screen-text {
+main .main-wrap02 .line01 .main-banner-screen .screen01 .screen-text01 {
+  font-size: 80px;
+  font-weight: 700;
+  position: absolute;
+  width: 1300px;
+  margin: 0 auto;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+main .main-wrap02 .line01 .main-banner-screen .screen01 .screen-text02 {
+  font-size: 80px;
+  font-weight: 700;
+  position: absolute;
+  width: 1300px;
+  margin: 0 auto;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+main .main-wrap02 .line01 .main-banner-screen .screen01 .screen-text03 {
   font-size: 80px;
   font-weight: 700;
   position: absolute;
@@ -572,7 +568,7 @@ main .main-wrap02 .line01 .main-banner-screen .screen01 .vid {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 main .main-wrap02 .line01 .main-banner-screen .screen01 .vid video {
   -o-object-fit: cover;
@@ -629,7 +625,11 @@ main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen {
 }
 main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li {
+  display: flex;
 }
 main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li span {
   display: block;
@@ -639,57 +639,6 @@ main .main-wrap02 .line03 {
   background-color: #007aff;
   height: 650px;
   margin-top: 135px;
-}
-main .main-wrap02 .line03 .swiper-bar {
-  display: flex;
-}
-main .main-wrap02 .line03 .swiper-bar li {
-  width: 1300px;
-  height: 650px;
-}
-main .main-wrap02 .line03 .swiper-bar li div {
-  position: relative;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-main .main-wrap02 .line03 .swiper-bar li div p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-main .main-wrap02 .line03 .swiper-bar li div p strong {
-  font-size: 40px;
-}
-main .main-wrap02 .line03 .swiper-bar li div p span {
-  position: relative;
-}
-main .main-wrap02 .line03 .swiper-bar li div p a > span::after {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  background-repeat: no-repeat;
-  position: absolute;
-  border: 1px solid #fff;
-  right: -5%;
-  bottom: 10%;
-  transform: translateX(100%);
-  background-size: contain;
-  z-index: 99;
-  background-image: url("./assets/media/assets/down_right_black.svg");
-}
-main .main-wrap02 .line03 .swiper-bar li div video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 main .main-wrap02 .kt-cloud-news {
   margin: 135px auto 125px;
