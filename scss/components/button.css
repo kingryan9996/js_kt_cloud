@@ -1,0 +1,23 @@
+.btn01 {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: flex;
+  z-index: 9999;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn01 img:nth-child(1) {
+  margin-right: 8px;
+}
+.btn01 img {
+  transform: translateX(-125%);
+  transition-duration: 300ms;
+  width: 16px;
+}
+
+.btn01:hover img {
+  transition-duration: 300ms;
+  transform: translateX(25%);
+}/*# sourceMappingURL=button.css.map */

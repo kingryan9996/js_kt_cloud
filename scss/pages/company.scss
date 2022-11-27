@@ -1,6 +1,5 @@
 main {
   .main-wrap02 {
-    
     .line01 {
       margin-bottom: 50px;
       width: 100%;
@@ -72,6 +71,8 @@ main {
       }
     }
     .line02 {
+      margin: 0 auto;
+      width: 1300px;
       .sub-banner-screen {
         margin: 135px auto 0;
         width: 1300px;
@@ -126,11 +127,62 @@ main {
       }
     }
     .line03 {
-      background-color: #007aff;
-      height: 650px;
+      margin: 0 auto;
+      width: 1300px;
       margin-top: 135px;
-    
-      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .company-infoma {
+        ul {
+          li {
+            display: flex;
+
+            span {
+              font-size: 16px;
+              line-height: 22px;
+              border-bottom: 1px solid gray;
+              display: inline-block;
+            }
+            span:nth-child(1) {
+              width: 325px;
+              margin-right: 32px;
+              font-weight: 600;
+              padding-bottom: 16px;
+            }
+            span:nth-child(2) {
+              width: 943px;
+              font-weight: 400;
+            }
+          }
+          li:nth-child(1) {
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+          }
+        }
+      }
+
+      .company-brochure {
+        width: 100%;
+        height: 400px;
+        background-image: url(/scss/assets/media/company/about_image_7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+        ul {
+          background-image: linear-gradient(
+            to right,
+            #051729 0%,
+            rgba(7, 25, 41, 0) 100%
+          );
+        }
+      }
     }
     .kt-cloud-news {
       margin: 135px auto 125px;

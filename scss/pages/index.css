@@ -107,6 +107,12 @@ main .main-wrap01 .line02 .sub-banner-screen div ul li div video {
 }
 main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 {
   margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 a {
+  display: flex;
 }
 main .main-wrap01 .line02 .sub-banner-screen .sub-02-screen {
   width: 100%;
@@ -153,20 +159,8 @@ main .main-wrap01 .line03 .swiper-bar li div p strong {
 main .main-wrap01 .line03 .swiper-bar li div p span {
   position: relative;
 }
-main .main-wrap01 .line03 .swiper-bar li div p a > span::after {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  background-repeat: no-repeat;
-  position: absolute;
-  border: 1px solid #fff;
-  right: -5%;
-  bottom: 10%;
-  transform: translateX(100%);
-  background-size: contain;
-  z-index: 99;
-  background-image: url("./assets/media/assets/down_right_black.svg");
+main .main-wrap01 .line03 .swiper-bar li div p a {
+  display: flex;
 }
 main .main-wrap01 .line03 .swiper-bar li div video {
   width: 100%;
