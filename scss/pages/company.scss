@@ -81,7 +81,16 @@ main {
         justify-content: center;
         align-items: flex-start;
         div {
+          line-height: 34px;
           text-transform: capitalize;
+            span{
+              font-size:40px;
+              font-weight: 700;
+            }
+            strong {
+              font-size: 80px;
+              font-weight: 700;
+            }
           p {
             strong {
               line-height: 100px;
@@ -111,6 +120,7 @@ main {
         }
         .sub-02-screen {
           width: 100%;
+          display: flex;
           ul {
             display: flex;
             flex-direction: column;
@@ -184,6 +194,49 @@ main {
         }
       }
     }
+    .line04 {
+      .history-line {
+        ul{
+        display: flex;
+      }
+    }
+  }
+    .line05 {
+      width: 1300px;
+      margin: 0 auto;
+      h2 {
+        text-align: center;
+        font-size: 40px;
+      }
+      
+      .logo-line{
+        
+        .left{
+          img {
+            width: 586px;
+          }
+        }
+        .right {
+          ul{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 260px;
+  
+          }}
+        }
+      }
+      .line05-ci {
+        margin-top: 24px;
+        span{
+          line-height: 26px;
+        }
+      }
+
+    }
+
     .kt-cloud-news {
       margin: 135px auto 125px;
       width: 1300px;
