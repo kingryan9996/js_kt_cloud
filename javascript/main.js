@@ -15,6 +15,8 @@ let mouseout = () => {
 apple.addEventListener("mouseover",mouseover);
 apple.addEventListener("mouseout",mouseout);
 
+
+
 let hide = () => {
     // console.log(window.pageYOffset)
     let hoc = document.getElementsByTagName("header")[0];

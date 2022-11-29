@@ -1,0 +1,53 @@
+$mobile : 360px;
+$tablet : 760px;
+$desktop : 1024px;
+$bigdesk : 1800px;
+
+@mixin device($min, $max) {
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+}
+
+@include device($mobile, $tablet){
+    //mobile
+    body {background-color: red;}
+}
+
+@include device($tablet, $desktop){
+    //tablet
+    body {background-color: blue;}
+}
+
+@include device($desktop, $bigdesk){
+    //tablet
+    body {background-color: coral;}
+}
+
+article{
+    div {
+        display: flex;
+        p {
+            width: 200px; height: 200px;
+            margin: 0 1px;
+        }
+        
+        
+    }
+
+}
+
+// $array : (1:'01.jpg',2:'02.jpg',3:'03.jpg',4:'04,jpg',5:'',6:'',7:'',8:url('./img/02.jpg'));
+$array : ('01.jpg','02.jpg','03.jpg','04,jpg');
+
+// @each $i,$name in $array{
+//     p:nth-of-type(#{$i}) {
+//         background-color: yellow;
+//         }
+// }
+
+@for $i from 1 to 5 {
+    p:nth-of-type(#{$i}) {
+        background-image:'../img/#{nth($array,$i)}.jpg';
+    }
+}
