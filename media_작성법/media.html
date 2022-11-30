@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./media.css">
+    <!-- <link rel="stylesheet" href="./media.cs"> -->
     <title>Document</title>
 </head>
 <body>
-    <div>22222</div>
+    <div></div>
     <article>
-        <h2></h2>
+        <button>222</button>
         <div>
-            <p>이미지01</p>
+            <p class="poo" id="poo">이미지01</p>
             <p>이미지02</p>
             <p>이미지03</p>
             <p>이미지04</p>
@@ -21,5 +21,69 @@
             <p>이미지07</p>
         </div>
     </article>
+
+    <style>
+        p{background-color: #006;
+        color: red;}
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+
+    <script>
+        // let play = () => {
+        //     let i = Math.floor(Math.random()*255+1);
+        //     console.log(i);
+        //     pww.style.backgroundColor = `#${i}`;
+        // }
+        // let van = document.querySelector('button');
+        // let pww = document.querySelector('p')
+        // van.addEventListener('click',play);
+                   
+        let data = [
+            {src:'./img/01.jpg'},
+            {src:'./img/02.jpg'},
+            {src:'./img/03.jpg'},
+            {src:'./img/04.jpg'},
+            {src:'./img/05.jpg'},
+            {src:'./img/06.jpg'}
+    ];
+        
+        let iww = Math.floor(Math.random()*3);
+        console.log(iww);
+        
+
+        let elImg = document.createElement('img');
+        //태그만들때씀
+
+        elImg.src = data[iww].src;
+
+        // document.body.append(elImg);
+        // 요소 뒤쪽에
+        document.body.prepend(elImg)
+        // 요소 앞쪽에
+
+        const elPhoto = document.querySelector('img');
+        
+        let inter;
+        let photo = () => {
+            
+            clearTimeout(inter);
+
+            inter = setTimeout(function(){
+
+            let iww = Math.floor(Math.random()*3);            
+            elImg.src = data[iww].src;
+            },500)
+        }
+
+        elPhoto.addEventListener('mousemove',photo);
+
+        
+        
+
+        
+    </script>
 </body>
 </html>

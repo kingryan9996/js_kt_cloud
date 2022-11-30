@@ -113,6 +113,14 @@ main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 {
 }
 main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 a {
   display: flex;
+  font-size: 16px;
+}
+main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 a span {
+  font-size: 16px;
+}
+main .main-wrap01 .line02 .sub-banner-screen .sub-banner-02 span {
+  font-size: 24px;
+  line-height: 34px;
 }
 main .main-wrap01 .line02 .sub-banner-screen .sub-02-screen {
   width: 100%;
@@ -254,6 +262,10 @@ main .main-wrap01 .link-card .link-card-wrap .link-card01 li p span {
   line-height: 34px;
   text-transform: capitalize;
 }
+main .main-wrap01 .link-card .link-card-wrap .link-card01 li p span:nth-last-child(1) {
+  font-size: 16px;
+  display: flex;
+}
 main .main-wrap01 .link-card .link-card-wrap .link-card02 {
   border-radius: 10px;
   overflow: hidden;
@@ -275,4 +287,8 @@ main .main-wrap01 .link-card .link-card-wrap .link-card02 li p span {
   text-transform: capitalize;
   font-size: 24px;
   line-height: 34px;
+}
+main .main-wrap01 .link-card .link-card-wrap .link-card02 li p span:nth-last-child(1) {
+  font-size: 16px;
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

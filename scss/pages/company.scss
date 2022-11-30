@@ -79,8 +79,12 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
         div {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           line-height: 34px;
           text-transform: capitalize;
             span{
@@ -89,6 +93,7 @@ main {
             }
             strong {
               font-size: 80px;
+              line-height: 98px;
               font-weight: 700;
             }
           p {
@@ -127,6 +132,17 @@ main {
             justify-content: space-between;
             li {
               display: flex;
+              .left {
+                font-weight: 500;
+                strong {
+                  font-size:80px;
+                  font-weight: 500;
+                }
+                p{
+                  font-size: 24px;
+                  font-weight: 500;
+                }
+              }
               span {
                 display: block;
                 margin-top: 4px;
@@ -145,13 +161,21 @@ main {
       justify-content: space-around;
       align-items: center;
       .company-infoma {
+        p{text-align: center;
+          span{
+            font-size: 40px;
+            line-height: 52px;
+            font-weight: 500;
+          }
+        }
         ul {
           li {
             display: flex;
+            margin-top: 14px;
 
             span {
               font-size: 16px;
-              line-height: 22px;
+              line-height: 14px;
               border-bottom: 1px solid gray;
               display: inline-block;
             }

@@ -73,9 +73,13 @@ main .main-wrap02 .line02 .sub-banner-screen {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 main .main-wrap02 .line02 .sub-banner-screen div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 34px;
   text-transform: capitalize;
 }
@@ -85,6 +89,7 @@ main .main-wrap02 .line02 .sub-banner-screen div span {
 }
 main .main-wrap02 .line02 .sub-banner-screen div strong {
   font-size: 80px;
+  line-height: 98px;
   font-weight: 700;
 }
 main .main-wrap02 .line02 .sub-banner-screen div p {
@@ -121,6 +126,17 @@ main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul {
 main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li {
   display: flex;
 }
+main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li .left {
+  font-weight: 500;
+}
+main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li .left strong {
+  font-size: 80px;
+  font-weight: 500;
+}
+main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li .left p {
+  font-size: 24px;
+  font-weight: 500;
+}
 main .main-wrap02 .line02 .sub-banner-screen .sub-02-screen ul li span {
   display: block;
   margin-top: 4px;
@@ -134,12 +150,21 @@ main .main-wrap02 .line03 {
   justify-content: space-around;
   align-items: center;
 }
+main .main-wrap02 .line03 .company-infoma p {
+  text-align: center;
+}
+main .main-wrap02 .line03 .company-infoma p span {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 500;
+}
 main .main-wrap02 .line03 .company-infoma ul li {
   display: flex;
+  margin-top: 14px;
 }
 main .main-wrap02 .line03 .company-infoma ul li span {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 14px;
   border-bottom: 1px solid gray;
   display: inline-block;
 }

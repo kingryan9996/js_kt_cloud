@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+
+    
+    .table {
+        display: flex;
+        width: 403px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+    }
+    .table > div {
+        border: 1px solid black;
+    }
+
+    img{
+        width: 200px;
+        height: 100px;
+    }
+
+    .bt-table {
+        
+        position: absolute;
+        bottom: 0%;
+        left:50%;
+        transform: translate(-50%,120%);
+        display: flex;
+        flex-direction: column;
+    }
+    main > div {
+        margin: 0 auto;
+    }
+
+
+  </style>
+  <body>
+    <main>
+        <div class="table">
+            <div><span>you</span>
+                <div class="board">
+                    <img src="./rock_img/ready.png" alt="">
+                </div>
+                
+          </div>
+          <div><span>computer</span>
+            <div class="board">
+                <img src="./rock_img/ready.png" alt="">
+            </div>
+          </div>
+          <div class="bt-table"><button id="gobtn">go</button><span id="gameResult">Ready?</span></div>
+        </div>
+        
+    </main>
+
+    <script>
+        const data = [
+            {src:'./rock_img/01.jpg'},
+            {src:'./rock_img/02.jpg'},
+            {src:'./rock_img/03.jpg'}
+        ]
+    
+        const youPhoto = document.querySelectorAll('.board > img')[0];
+        const comPhoto = document.querySelectorAll('.board > img')[1]
+        let btn = document.getElementById("gobtn");
+        let gameResult = document.getElementById("gameResult");
+            
+        let play = () => {
+            let youNum = Math.floor(Math.random()*3)
+            youPhoto.src = data[youNum].src;
+            // console.log(youNum);
+            play02();
+            console.log('you',youNum)
+            let comNum = play02()
+            console.log('com',comNum)
+            if(youNum==0 && comNum==2){
+                gameResult.innerText = '이겼습니다.'
+                document.querySelector('div').style.border = '5px solid green';
+            }else if(youNum==2 && comNum==0){
+                gameResult.innerText = '졌습니다.'
+                document.querySelector('div').style.border = '5px solid red';
+            }
+            else{
+                if (youNum < comNum){
+                gameResult.innerText = '졌습니다.'
+                document.querySelector('div').style.border = '5px solid red';
+            } else if (youNum == comNum){
+                gameResult.innerText = '비겼습니다.'
+                document.querySelector('div').style.border = '5px solid black';
+            } else {
+                gameResult.innerText = '이겼습니다.'
+                document.querySelector('div').style.border = '5px solid green';
+            }
+            }
+            
+        }
+
+        let play02 = () => {
+            let comNum = Math.floor((Math.random()*3))
+            comPhoto.src = data[comNum].src;
+            // console.log(comNum);
+            return comNum;
+        }
+
+    btn.addEventListener('click',play);
+
+    </script>
+  </body>
+</html>
