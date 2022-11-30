@@ -90,4 +90,34 @@ header .header-wrap .visible-bar .header-right ul .total-menu {
   background-color: #fff;
   width: 32px;
   height: 32px;
+}
+header .to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 111111;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 179, 255, 0.6549019608);
+  border-radius: 50%;
+  transform: scale(0.8);
+  opacity: 0;
+  cursor: pointer;
+}
+header .to-top a {
+  position: relative;
+  color: #000;
+}
+header .to-top a img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 35px;
+  height: 35px;
+  transform: rotateZ(-90deg) translate(-20%, 22%) scale(0.9);
+}
+header .to-top:hover {
+  background-color: #000b15;
+  transition: ease-in;
+  transition-duration: 200ms;
 }/*# sourceMappingURL=header.css.map */

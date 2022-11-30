@@ -87,15 +87,15 @@ main {
           align-items: center;
           line-height: 34px;
           text-transform: capitalize;
-            span{
-              font-size:40px;
-              font-weight: 700;
-            }
-            strong {
-              font-size: 80px;
-              line-height: 98px;
-              font-weight: 700;
-            }
+          span {
+            font-size: 40px;
+            font-weight: 700;
+          }
+          strong {
+            font-size: 80px;
+            line-height: 98px;
+            font-weight: 700;
+          }
           p {
             strong {
               line-height: 100px;
@@ -135,10 +135,10 @@ main {
               .left {
                 font-weight: 500;
                 strong {
-                  font-size:80px;
+                  font-size: 80px;
                   font-weight: 500;
                 }
-                p{
+                p {
                   font-size: 24px;
                   font-weight: 500;
                 }
@@ -161,8 +161,9 @@ main {
       justify-content: space-around;
       align-items: center;
       .company-infoma {
-        p{text-align: center;
-          span{
+        p {
+          text-align: center;
+          span {
             font-size: 40px;
             line-height: 52px;
             font-weight: 500;
@@ -220,11 +221,11 @@ main {
     }
     .line04 {
       .history-line {
-        ul{
-        display: flex;
+        ul {
+          display: flex;
+        }
       }
     }
-  }
     .line05 {
       width: 1300px;
       margin: 0 auto;
@@ -232,33 +233,31 @@ main {
         text-align: center;
         font-size: 40px;
       }
-      
-      .logo-line{
-        
-        .left{
+
+      .logo-line {
+        .left {
           img {
             width: 586px;
           }
         }
         .right {
-          ul{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          img {
-            width: 260px;
-  
-          }}
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 260px;
+            }
+          }
         }
       }
       .line05-ci {
         margin-top: 24px;
-        span{
+        span {
           line-height: 26px;
         }
       }
-
     }
 
     .kt-cloud-news {
