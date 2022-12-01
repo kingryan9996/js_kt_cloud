@@ -23,7 +23,6 @@ footer {
         .info-detail {
           font-size: 0.8rem;
           cursor: pointer;
-          border: 5px solid red;
           strong {
             display: block;
             line-height: 1.7rem;
@@ -46,8 +45,13 @@ footer {
         .company-list:active {
           background-color: #000;
         }
+        .company-list:active > .material-symbols-outlined {
+          transform: rotateZ(45deg);
+
+        }
         .company-list:active > ul {
-          background-color: #000;
+          display: block;
+
         }
         .company-list {
           border-radius: 5px;
@@ -59,21 +63,21 @@ footer {
           align-items: center;
           padding: 0 5px;
           position: relative;
-          span {
-            border: 1px solid yellow;
-          }
+            .material-symbols-outlined {
+              transform: rotateZ(-45deg);
+            }
+
   
           ul {
+            display: none;
             position: absolute;
-            top: -170%;
-            left: 1%;
+            bottom: 35px;
+            left: 2%;
             width: 265px;
-            border: 1px solid yellow;
-            border-radius: 5px;
-            background-color: gray;
+            line-height: 35px;
+            
           }
           .kt-cloud-log {
-            
             img {
               width: 120px;
               height: 30px;

@@ -1,20 +1,3 @@
-const apple = document.getElementById("company-info");
-
-let mouseover = () => {
-    apple.style = "border:5px solid yellow;"
-    // console.log('반갑습니다.');
-}
-
-let mouseout = () => {
-    apple.style = "border:none;"
-    // console.log('반갑습니다.');
-}
-
-apple.addEventListener("mouseover",mouseover);
-apple.addEventListener("mouseout",mouseout);
-
-
-
 let hide = () => {
     // console.log(window.pageYOffset)
     let hoc = document.getElementsByTagName("header")[0];

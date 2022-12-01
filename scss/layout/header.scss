@@ -20,7 +20,6 @@ header {
   width: 100%;
 
   .header-wrap {
-    color: red;
     max-width: 1300px;
     height: 72px;
     margin: 0 auto;
@@ -36,12 +35,12 @@ header {
           height: 22px;
         }
       }
-      .header-menu-list:hover + .hidden-bar {
-        background-color: red;
-        opacity: 0.4;
-        z-index: 5;
-        color: red;
-      }
+      // .header-menu-list:hover + .hidden-bar {
+      //   background-color: red;
+      //   opacity: 0.4;
+      //   z-index: 5;
+      //   color: red;
+      // }
       .header-menu-list {
         display: flex;
         font-size: 0.875rem;
@@ -52,20 +51,55 @@ header {
       }
 
       .hidden-bar {
-        opacity: 0;
-        position: absolute;
-        background-color: blue;
-        display: flex;
+        // opacity: 0;
+        position: fixed;
+        background-color: #091626;
+
         top: 0%;
         left: 0%;
         z-index: -5;
-        width: 1300px;
+        width: 100%;
         height: 280px;
+        display: none;
 
         .hidden-bar-wrap {
-          opacity: 0.5;
-          ul {
-            background-color: #00b2ff;
+          
+          width: 1300px;
+          height: 100%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+
+          position: relative;
+          
+          .hidden-contents {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+
+            strong {
+              font-weight: 500;
+              font-size: 40px;
+              line-height: 52px;
+            }
+            
+            ul {
+              display: flex;
+              margin-top: 21px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 26px;
+              li {
+                margin-right: 16px;
+                padding-right: 16px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+              }
+              li:nth-last-child(1) {
+                margin-right: 0;
+                padding-right: 0;
+                border-right: none;
+              }
+            }
           }
         }
       }

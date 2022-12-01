@@ -24,7 +24,6 @@ footer .footer-wrap .company-info .footer-legal div:first-child::after {
 footer .footer-wrap .company-info .info-detail {
   font-size: 0.8rem;
   cursor: pointer;
-  border: 5px solid red;
 }
 footer .footer-wrap .company-info .info-detail strong {
   display: block;
@@ -47,8 +46,11 @@ footer .footer-wrap .group-company .company-list:hover {
 footer .footer-wrap .group-company .company-list:active {
   background-color: #000;
 }
+footer .footer-wrap .group-company .company-list:active > .material-symbols-outlined {
+  transform: rotateZ(45deg);
+}
 footer .footer-wrap .group-company .company-list:active > ul {
-  background-color: #000;
+  display: block;
 }
 footer .footer-wrap .group-company .company-list {
   border-radius: 5px;
@@ -61,17 +63,16 @@ footer .footer-wrap .group-company .company-list {
   padding: 0 5px;
   position: relative;
 }
-footer .footer-wrap .group-company .company-list span {
-  border: 1px solid yellow;
+footer .footer-wrap .group-company .company-list .material-symbols-outlined {
+  transform: rotateZ(-45deg);
 }
 footer .footer-wrap .group-company .company-list ul {
+  display: none;
   position: absolute;
-  top: -170%;
-  left: 1%;
+  bottom: 35px;
+  left: 2%;
   width: 265px;
-  border: 1px solid yellow;
-  border-radius: 5px;
-  background-color: gray;
+  line-height: 35px;
 }
 footer .footer-wrap .group-company .company-list .kt-cloud-log img {
   width: 120px;
