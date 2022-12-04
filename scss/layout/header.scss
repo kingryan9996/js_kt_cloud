@@ -63,7 +63,6 @@ header {
         display: none;
 
         .hidden-bar-wrap {
-          
           width: 1300px;
           height: 100%;
           margin: 0 auto;
@@ -71,7 +70,7 @@ header {
           flex-direction: column;
 
           position: relative;
-          
+
           .hidden-contents {
             position: absolute;
             bottom: 50px;
@@ -82,7 +81,7 @@ header {
               font-size: 40px;
               line-height: 52px;
             }
-            
+
             ul {
               display: flex;
               margin-top: 21px;

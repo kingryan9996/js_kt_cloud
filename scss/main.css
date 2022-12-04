@@ -313,7 +313,10 @@ footer .footer-wrap .group-company .company-list .kt-cloud-log img {
   transform: translateX(25%);
 }
 
-main .main-wrap01 .line01::after {
+main {
+  overflow: hidden;
+}
+main .main-wrap01 .swiper-container01::after {
   content: "";
   width: 100%;
   height: 6px;
@@ -345,17 +348,18 @@ main .main-wrap01 .line01::after {
     width: 100%;
   }
 }
-main .main-wrap01 .line01 {
+main .main-wrap01 .swiper-container01 {
   margin-bottom: 50px;
   width: 100%;
   height: 100vh;
   position: relative;
 }
-main .main-wrap01 .line01 .main-banner-screen {
+main .main-wrap01 .swiper-container01 .swiper-wrapper {
   width: 1300px;
   margin: 0 auto;
+  position: absolute;
 }
-main .main-wrap01 .line01 .main-banner-screen .screen01 .screen-text {
+main .main-wrap01 .swiper-container01 .swiper-wrapper .swiper-slide .slide-inner {
   font-size: 80px;
   font-weight: 700;
   position: absolute;
@@ -365,7 +369,7 @@ main .main-wrap01 .line01 .main-banner-screen .screen01 .screen-text {
   bottom: 5%;
   transform: translateX(-50%);
 }
-main .main-wrap01 .line01 .main-banner-screen .screen01 .vid {
+main .main-wrap01 .swiper-container01 .swiper-wrapper .swiper-slide .vid {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -373,17 +377,23 @@ main .main-wrap01 .line01 .main-banner-screen .screen01 .vid {
   width: 100%;
   height: 100%;
 }
-main .main-wrap01 .line01 .main-banner-screen .screen01 .vid video {
+main .main-wrap01 .swiper-container01 .swiper-wrapper .swiper-slide .vid video {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-main .main-wrap01 .line01 .main-banner-screen > div > p {
+main .main-wrap01 .swiper-container01 .swiper-wrapper .swiper-slide .vid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .main-wrap01 .swiper-container01 .main-banner-screen > div > p {
   font-size: 5rem;
   font-weight: 700;
 }
-main .main-wrap01 .line01 .banner-text {
+main .main-wrap01 .swiper-container01 .banner-text {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -448,49 +458,80 @@ main .main-wrap01 .line02 .sub-banner-screen .sub-02-screen ul li span {
   display: block;
   margin-top: 4px;
 }
-main .main-wrap01 .line03 {
-  background-color: #007aff;
-  height: 650px;
-  margin-top: 135px;
-}
-main .main-wrap01 .line03 .swiper-bar {
-  display: flex;
-}
-main .main-wrap01 .line03 .swiper-bar li {
+main .main-wrap01 .swiper-container {
   width: 1300px;
+  margin: 135px auto 0;
+  position: relative;
   height: 650px;
 }
-main .main-wrap01 .line03 .swiper-bar li div {
-  position: relative;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-main .main-wrap01 .line03 .swiper-bar li div p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-main .main-wrap01 .line03 .swiper-bar li div p strong {
-  font-size: 40px;
-}
-main .main-wrap01 .line03 .swiper-bar li div p span {
-  position: relative;
-}
-main .main-wrap01 .line03 .swiper-bar li div p a {
-  display: flex;
-}
-main .main-wrap01 .line03 .swiper-bar li div video {
-  width: 100%;
-  height: 100%;
+main .main-wrap01 .swiper-container .swiper-wrapper {
   position: absolute;
+  display: flex;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 1300px;
+  position: relative;
+  display: flex;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner {
+  display: flex;
+  flex-direction: column;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner video {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -10;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p01 {
+  margin-top: 83px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p01 em {
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p01 strong {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p01 span {
+  text-transform: capitalize;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p01 a {
+  display: flex;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p02 {
+  margin-top: 138px;
+  margin-left: 100px;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p02 span {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p02 .p02-did {
+  display: flex;
+  flex-direction: row;
+}
+main .main-wrap01 .swiper-container .swiper-wrapper .swiper-slide .slide-inner .p02 .p02-did .p02-span {
+  margin-bottom: 0;
+  display: inline;
 }
 main .main-wrap01 .kt-cloud-news {
   margin: 135px auto 125px;
