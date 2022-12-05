@@ -41,15 +41,74 @@ function resizeComplete() {
 }
 
 window.addEventListener("resize", function () {
-    
-  clearTimeout(resizeTimer);
+  // clearTimeout(resizeTimer);
   blueBar.classList.remove("on");
   resizeTimer = setTimeout(function () {
-    
-    
-      blueBar.classList.add("on");
+    blueBar.classList.add("on");
 
-      // blueBar.classList.add('on')
-    
+    // blueBar.classList.add('on')
   }, 100);
 });
+
+const slideRe = document.querySelector(".swiper-container01");
+
+slideRe.addEventListener("mouseup", function () {
+  // clearTimeout(resizeTimer);
+  blueBar.classList.remove("on");
+  // resizeTimer = setTimeout(function () {
+  blueBar.classList.add("on");
+
+  // blueBar.classList.add('on')
+  // }, 100);
+});
+
+const div = document.querySelector(".swiper-container01");
+// const clearbtn = document.getElementById('clearbtn');
+// const result = document.getElementById('result');
+
+slideRe.addEventListener("mousedown", (e) => {
+  console.log("마우스다운");
+  // result.innerHTML = `<div>screenX, Y: (${e.screenX}, ${e.screenY})</div>`;
+  let preLocX = `${e.screenX}`;
+  // console.log(`<div>screenX, Y: (${e.screenX}, ${e.screenY})</div>`);
+  slideRe.addEventListener("mouseup", function (event) {
+    event.stopPropagation();
+    let locX = `${e.screenX}`;
+    // console.log(`<div>screenX, Y: (${e.screenX}, ${e.screenY})</div>`);
+    // clearTimeout(resizeTimer);
+    if (preLocX != locX) {
+      blueBar.classList.remove("on");
+
+      // resizeTimer = setTimeout(function () {
+      //   blueBar.classList.add("on");
+
+      //   // blueBar.classList.add('on')
+      // }, 50);
+    }
+    locX = "";
+    blueBar.classList.remove("on");
+    resizeTimer = setTimeout(function () {
+      blueBar.classList.toggle("on");
+      console.log("eee");
+      // blueBar.classList.add('on')
+    }, 0);
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      blueBar.classList.add("on");
+      console.log("eee");
+      // blueBar.classList.add('on')
+    }, 0);
+  });
+
+  // result.innerHTML += `<div>clientX, Y: (${e.clientX}, ${e.clientY})</div>`;
+  // console.log(`<div>clientX, Y: (${e.clientX}, ${e.clientY})</div>`);
+  // result.innerHTML += `<div>pageX, Y: (${e.pageX}, ${e.pageY})</div>`;
+  // console.log(`<div>pageX, Y: (${e.pageX}, ${e.pageY})</div>`);
+  // result.innerHTML += `<div>offsetX, Y: (${e.offsetX}, ${e.offsetY})</div>`;
+  // console.log(`<div>offsetX, Y: (${e.offsetX}, ${e.offsetY})</div>`);
+});
+
+// clearbtn.addEventListener('click', (e) => {
+//   result.innerHTML= '';
+// }
+// );
