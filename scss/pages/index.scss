@@ -3,13 +3,16 @@ main {
   .main-wrap01 {
     .swiper-container01::after {
       content: "";
-      width: 100%;
+      width: 0;
       height: 6px;
       background-color: #00b2ff;
       position: absolute;
       z-index: 5;
       left: 0%;
       bottom: 0%;
+    }
+    .swiper-container01.on::after {
+      
       animation-name: progress;
       animation-duration: 15000ms;
       animation-iteration-count: infinite;

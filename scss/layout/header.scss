@@ -35,12 +35,12 @@ header {
           height: 22px;
         }
       }
-      // .header-menu-list:hover + .hidden-bar {
-      //   background-color: red;
-      //   opacity: 0.4;
-      //   z-index: 5;
-      //   color: red;
-      // }
+      .header-menu-list:hover + .hidden-bar {
+        background-color: red;
+        opacity: 0.4;
+        z-index: 5;
+        color: red;
+      }
       .header-menu-list {
         display: flex;
         font-size: 0.875rem;

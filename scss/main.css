@@ -96,6 +96,12 @@ header .header-wrap .visible-bar h1 img {
   width: 90px;
   height: 22px;
 }
+header .header-wrap .visible-bar .header-menu-list:hover + .hidden-bar {
+  background-color: red;
+  opacity: 0.4;
+  z-index: 5;
+  color: red;
+}
 header .header-wrap .visible-bar .header-menu-list {
   display: flex;
   font-size: 0.875rem;
@@ -316,9 +322,9 @@ footer .footer-wrap .group-company .company-list .kt-cloud-log img {
 main {
   overflow: hidden;
 }
-main .main-wrap01 .swiper-container01::after {
+main .main-wrap01 .swiper-container01.on::after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 6px;
   background-color: #00b2ff;
   position: absolute;
