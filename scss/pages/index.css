@@ -5,7 +5,7 @@ main .main-wrap01 .swiper-container01::after {
   content: "";
   width: 0;
   height: 6px;
-  background-color: red;
+  background-color: #00b2ff;
   position: absolute;
   z-index: 5;
   left: 0%;
@@ -312,7 +312,7 @@ main .main-wrap01 .link-card .link-card-wrap .link-card01 li p span:nth-last-chi
 main .main-wrap01 .link-card .link-card-wrap .link-card02 {
   border-radius: 10px;
   overflow: hidden;
-  background-image: url("/scss/assets/media/main/linkcard_image_2.png");
+  background-image: url("./assets/media/main/linkcard_image_2.png");
   background-size: cover;
 }
 main .main-wrap01 .link-card .link-card-wrap .link-card02 li {
