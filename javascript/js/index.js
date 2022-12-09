@@ -1,3 +1,22 @@
+$("body").prepend("<header>");
+$("body").append("<footer>");
+
+$("header").load("./inc.html header>div");
+$("footer").load("./inc.html footer>div");
+
+// function head() {
+//   $("header a").click(function () {
+//     alert("헤더!");
+//   });
+// }
+
+// function foot() {
+//   $("footer a").click(function () {
+//     alert("푸터!");
+//   });
+// }
+
+
 let slides = document.querySelector(".swiper-wrapper"),
   slide = document.querySelectorAll(".swiper-wrapper .swiper-slide"),
   slideCount = slide.length,
