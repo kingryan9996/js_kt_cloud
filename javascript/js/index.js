@@ -9,8 +9,8 @@ $("footer").load("../html/inc.html footer");
 let idx = localStorage.idx || 0;
 
 function head () {
-    $("header li").eq(idx).css("scale","7.0")
-    .css(    'transform','translateY(30px)')
+    $("header li").eq(idx).css("scale","6.0")
+    .css(    'transform','translateY(100px)')
     .css('background-color','rgba(0,0,0,0.6)')
     $("header li a").eq(idx).css("color","coral")
     
