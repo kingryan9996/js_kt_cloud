@@ -1,8 +1,8 @@
 $("body").prepend("<header>");
 $("body").append("<footer>");
 
-$("header").load("../html/inc.html header");
-$("footer").load("../html/inc.html footer");
+$("header").load("./html/inc.html header");
+$("footer").load("./html/inc.html footer");
 
 // function head() {
 //   $("header a").click(function () {
