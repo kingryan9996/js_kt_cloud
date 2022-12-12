@@ -8,7 +8,7 @@ let idx = localStorage.idx || 0;
 
 function head () {
     $("header li").eq(idx).css("scale","7.0")
-    .css(    'transform','translateY(70px)')
+    .css(    'transform','translateY(30px)')
     .css('background-color','rgba(0,0,0,0.6)')
     $("header li a").eq(idx).css("color","coral")
     
